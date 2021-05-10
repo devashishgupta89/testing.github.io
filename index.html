@@ -1,6 +1,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Bubble Super Magic</title>
 		<link rel="stylesheet" type="text/css" href="js/style.css"/>
         <script  src = "js/phaser.min.js"></script>
@@ -13,11 +15,16 @@
 		<script  src = "js/Level.js"></script>
 		<script  src = "js/Level2.js"></script>
         <script src="js/serverCom.js"></script>
-		
-        
+
+
        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
        <meta name="apple-mobile-web-app-capable" content="yes">
         <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
 			body{
 				margin:0px;
 				padding:0px;
@@ -78,12 +85,12 @@
 					}
 
 					@-webkit-keyframes animatebottom {
-						from { bottom:-100px; opacity:0 } 
+						from { bottom:-100px; opacity:0 }
 						to { bottom:0px; opacity:1 }
 					}
 
-					@keyframes animatebottom { 
-						from{ bottom:-100px; opacity:0 } 
+					@keyframes animatebottom {
+						from{ bottom:-100px; opacity:0 }
 						to{ bottom:0; opacity:1 }
 					}
 
@@ -93,7 +100,7 @@
 					}
 					</style>
 						</head>
-							<body 
+							<body
 								onload="myFunction()" style="margin:0;">
 								<div id="loader"></div>
 								<div style="display:none;" id="myDiv" class="animate-bottom">
@@ -117,11 +124,14 @@
      <meta name="HandheldFriendly" content="true" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black" /><meta name="apple-mobile-web-app-title" content="Phaser App">
 	 <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui"
 	 />
-	 
+
     <body>
     	<div id = "turn"></div>
-	     <script src="../lib/microapp.js"></script>
+      <script src="../lib/microapp.js"></script>
+       <script>sayHello()</script>
+       <img src="1.png" style="width:72px;"/>
 		<script type="text/javascript">
+
             var gameUrl = "https://atechnos.in/html5-games/testing.php";
 	    	window.onload = function()
 	    	{
@@ -132,7 +142,7 @@
 		        game.state.add('Menu',Game.Menu);
 		        game.state.add('GamePlay',Game.GamePlay);
 		        game.state.start('Logo');
-	    
+
 	    	};
 	    </script>
     </body>
